@@ -33,10 +33,10 @@ class RotatingShiningCard extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  _RotatingShiningCardState createState() => _RotatingShiningCardState();
+  RotatingShiningCardState createState() => RotatingShiningCardState();
 }
 
-class _RotatingShiningCardState extends State<RotatingShiningCard> {
+class RotatingShiningCardState extends State<RotatingShiningCard> {
   double rotationY = 0.0;
   double rotationX = 0.0;
   Offset shineOffset = Offset.zero;
@@ -96,8 +96,7 @@ class _RotatingShiningCardState extends State<RotatingShiningCard> {
                   child: widget.frontChild,
                 ),
               // Shine effect
-              if (shineOffset != Offset.zero)
-                _buildShineEffect(),
+              if (shineOffset != Offset.zero) _buildShineEffect(),
             ],
           ),
         ),
