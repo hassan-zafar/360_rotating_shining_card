@@ -1,39 +1,93 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# Rotating Shining Card
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
+A Flutter widget that displays a 3D rotating card with a shining effect, customizable and interactive.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
+![Rotating Shining Card](https://github.com/hassan-zafar/360_rotating_shining_card/raw/main/assets/rotating_shining_card_demo.gif)
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+## Overview
+
+`RotatingShiningCard` is a customizable Flutter widget that allows you to display a card that can be rotated in 3D space with touch interactions. It includes a shining effect that follows the touch position, adding a dynamic and engaging visual experience.
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+- **3D Rotation**: Rotate the card along the X and Y axes based on user touch input.
+- **Shining Effect**: A radial shining effect that follows the user's touch, simulating light reflection.
+- **Customizable Content**: Use any widget as the front and back faces of the card.
+- **Adjustable Properties**: Customize the card's size, border radius, shine intensity, and shine color.
+- **Easy Integration**: Simple to add to any Flutter project.
 
-## Getting started
+## Installation
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+Add the following to your `pubspec.yaml` file:
+
+```yaml
+dependencies:
+  rotating_shining_card: ^0.1.0
+
+Then run:
+
+flutter pub get
+
+Alternatively, you can install it from the command line:
+
+flutter pub add rotating_shining_card
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+Import the package in your Dart code:
 
-```dart
-const like = 'sample';
-```
+import 'package:rotating_shining_card/rotating_shining_card.dart';
 
-## Additional information
+Use the RotatingShiningCard widget in your widget tree:
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+RotatingShiningCard(
+  width: 200,
+  height: 300,
+  frontChild: Image.asset('assets/front_image.png', fit: BoxFit.cover),
+  backChild: Image.asset('assets/back_image.png', fit: BoxFit.cover),
+  borderRadius: 16.0,
+  shineIntensity: 0.3,
+  shineColor: Colors.white,
+),
+
+## Example
+
+Here's a basic example of how to use the RotatingShiningCard in a Flutter app:
+
+import 'package:flutter/material.dart';
+import 'package:rotating_shining_card/rotating_shining_card.dart';
+
+class MyHomePage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: RotatingShiningCard(
+          width: 200,
+          height: 300,
+          frontChild: Image.asset('assets/front_image.png', fit: BoxFit.cover),
+          backChild: Image.asset('assets/back_image.png', fit: BoxFit.cover),
+          borderRadius: 16.0,
+          shineIntensity: 0.3,
+          shineColor: Colors.white,
+        ),
+      ),
+    );
+  }
+}
+
+## Customization
+
+* width and height: Set the size of the card.
+* frontChild and backChild: Provide any widget to display on the front and back faces.
+* borderRadius: Adjust the roundness of the card's corners.
+* shineIntensity: Control the opacity of the shine effect (value between 0.0 and 1.0).
+* shineColor: Change the color of the shine effect
+
+## Contributions
+
+Contributions are welcome! Please feel free to submit a pull request or open an issue on GitHub.
+
+## Contact
+For any questions or suggestions, please contact Hassan Zafar.
+
