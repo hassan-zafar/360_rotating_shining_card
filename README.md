@@ -2,9 +2,12 @@
 
 A Flutter widget that displays a 3D rotating card with a shining effect, customizable and interactive.
 
-![Rotating Shining Card](https://github.com/hassan-zafar/360_rotating_shining_card/raw/main/assets/rotating_shining_card_demo.gif)
+![Rotating Shining Card](https://github.com/user-attachments/assets/304dc3ec-9a2e-46f6-bc9e-335171498fb1)
 
 ## Overview
+
+
+
 
 `RotatingShiningCard` is a customizable Flutter widget that allows you to display a card that can be rotated in 3D space with touch interactions. It includes a shining effect that follows the touch position, adding a dynamic and engaging visual experience.
 
@@ -23,23 +26,23 @@ Add the following to your `pubspec.yaml` file:
 ```yaml
 dependencies:
   rotating_shining_card: ^0.1.0
-
+```
 Then run:
-
+```
 flutter pub get
-
+```
 Alternatively, you can install it from the command line:
-
+```
 flutter pub add rotating_shining_card
-
+```
 ## Usage
 
 Import the package in your Dart code:
-
+```
 import 'package:rotating_shining_card/rotating_shining_card.dart';
-
+```
 Use the RotatingShiningCard widget in your widget tree:
-
+```
 RotatingShiningCard(
   width: 200,
   height: 300,
@@ -49,11 +52,11 @@ RotatingShiningCard(
   shineIntensity: 0.3,
   shineColor: Colors.white,
 ),
-
+```
 ## Example
 
 Here's a basic example of how to use the RotatingShiningCard in a Flutter app:
-
+```
 import 'package:flutter/material.dart';
 import 'package:rotating_shining_card/rotating_shining_card.dart';
 
@@ -75,7 +78,7 @@ class MyHomePage extends StatelessWidget {
     );
   }
 }
-
+```
 ## Customization
 
 * width and height: Set the size of the card.
