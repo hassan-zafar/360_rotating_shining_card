@@ -1,6 +1,6 @@
 name: rotating_shining_card
 description: A Flutter widget that displays a 3D rotating card with a shining effect, customizable and interactive.
-version: 0.1.11
+version: 0.1.2
 homepage: https://github.com/hassan-zafar/360_rotating_shining_card
 
 environment:
