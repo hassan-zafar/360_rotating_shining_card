@@ -2,7 +2,9 @@
 
 A Flutter widget that displays a 3D rotating card with a shining effect, customizable and interactive.
 
-![Rotating Shining Card](https://github.com/user-attachments/assets/304dc3ec-9a2e-46f6-bc9e-335171498fb1)
+![Rotating Shining Card](https://github.com/hassan-zafar/360_rotating_shining_card/raw/assets/360_rotating_card.mp4)
+
+
 
 ## Overview
 
@@ -79,6 +81,7 @@ class MyHomePage extends StatelessWidget {
   }
 }
 ```
+
 ## Customization
 
 * width and height: Set the size of the card.
@@ -86,6 +89,11 @@ class MyHomePage extends StatelessWidget {
 * borderRadius: Adjust the roundness of the card's corners.
 * shineIntensity: Control the opacity of the shine effect (value between 0.0 and 1.0).
 * shineColor: Change the color of the shine effect
+
+## Additional Notes
+* Testing: Ensure you have appropriate assets (images) in your project when using Image.asset.
+* Assets: If you use images, don't forget to declare them in your app's pubspec.yaml.
+* Compatibility: This package requires Flutter SDK version 3.0.0 or higher.
 
 ## Contributions
 
